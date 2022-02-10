@@ -1,3 +1,35 @@
+
+body {
+    background: url('../images/medical-center.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.row {
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.card-panel {
+    margin-top: 120px;
+    background-color: rgba(255 248 246 / 70%);
+}
+
+a.brand-logo {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.container {
+    max-width: 70%;
+    min-width: 70%;
+    width: auto;
+}
+
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -10,7 +42,12 @@
     margin: 5px;
 }
 
+.collapsible {
+   background-color: rgb(150, 200, 250); 
+   margin-top: 40px;
+}
+
 .collapsible-header .col strong {
     margin: 5px;
-    line-height: 42px;
+    line-height: 20px;
 }
