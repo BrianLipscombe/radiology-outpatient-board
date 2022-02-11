@@ -10,10 +10,8 @@
                     <label for="query">Search Orders</label>
                 </div>
                 <div class="col s12 m4">
+                    <button type="submit" class="light-blue darken-1 btn text-shadow">Search</button>
                     <a href="{{ url_for('get_tasks') }}" class="red btn text-shadow">Reset</a>
-                    <button type="submit" class="light-blue darken-1 btn text-shadow">
-                        <i class="fas fa-search left"></i> Search
-                    </button>
                 </div>
             </div>
         </form>
@@ -27,14 +25,14 @@
                 <div class="col s3">
                     <i class="fas fa-angle-double-down"></i>
                     {% if session.user|lower == task.created_by|lower %}
-                        <a href="{{ url_for('delete_task', task_id=task._id) }}" class="btn-small red accent-4">Done</a>
-                        <a href="{{ url_for('edit_task', task_id=task._id) }}" class="btn-small green lighten-1">Edit</a>
+                        <a href="{{ url_for('delete_task', task_id=task._id) }}" class="btn-small red accent-4">Exam Completed</a>
+                        <a href="{{ url_for('edit_task', task_id=task._id) }}" class="btn-small green lighten-1">Edit Order</a>
                     {% endif %}
                 </div>
                 <div class="col s9">
-                    <strong>{{ task.category_name }}</strong> : {{ task.due_date }}
+                    <strong>{{ task.category_name }}</strong> : {{ task.due_date }} @ {{ task.appointment_time }}
                     {% if task.is_urgent == "on" %}
-                        <i class="fas fa-exclamation-circle light-blue-text text-lighten-2 tooltipped"
+                        <i class="fas fa-exclamation-triangle yellow-text text-lighten-2 tooltipped"
                             data-position="right" data-tooltip="URGENT!"></i>
                     {% endif %}
                 </div>
