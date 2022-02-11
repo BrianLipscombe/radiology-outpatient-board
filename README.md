@@ -2,7 +2,7 @@
 
 This is Brian Lipscombe's third Milestone Project at [Code Institute](https://codeinstitute.net). It was built using HTML5, CSS3, JavaScript, Python+Flask, MongoDB Gitpod, and deployed on the hosting platform Heroku. It is designed with Code Institute's Assessment Handbook Project Idea 0 in mind - Bring your own idea to life, based on providing value to users to address a specific real or imagined need.
 
-It is intended to provide organization and management support for outpatient diagnostic imaging orders scheduled within the radiology department of a hospital.
+It is intended to provide management support and to serve as a reminder to diagnostic imgaging techs of outpatient appointments scheduled within a radiology department. In a busy hospital setting, balancing scheduled appointments for outpatients in radiology with spontaneous STAT orders from the Emergency Department and prolonged, complicated exam orders from the Intensive Care Unit can be very challenging, and an app like this could provide some added organization.  
 
 The app can be found [here.]()
 
@@ -12,7 +12,7 @@ The app can be found [here.]()
 
     1. Visitor Goals
 
-    - Start the quiz
+    - Register
     - Agree to the rules of the quiz
     - See how much time to answer is available
     - Read the questions without being overly rushed
