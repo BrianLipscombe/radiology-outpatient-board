@@ -153,9 +153,7 @@ https://github.com/BrianLipscombe/cryptocurrency-quiz-game
 
     Caleb Mbakwe: My mentor Caleb for helping me and for providing professional feedback even though time and scheduling has been an enormous challenge for me.
 
-    Youtube: For providing a platform with a wealth of information to absorb. Some of which helped me get the code for this project off the ground.
-
-    Code Institute on Slack: Hele_5P. Without stumbling upon this fellow student's Slack post for her MS2 project review request, I might have never found the inspiration for this project.
+    Code Institute on Slack:
 
     My family for being patient and understanding when most of my time is absorbed by work and school. 
 
