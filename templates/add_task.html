@@ -22,25 +22,25 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-portrait prefix light-blue-text text-darken-4"></i>
-                    <input id="task_name" name="task_name" minlength="5" maxlength="50"
+                    <input id="patient_name" name="patient_name" minlength="5" maxlength="50"
                         type="text" class="validate" required>
-                    <label for="task_name">Patient Name</label>
+                    <label for="patient_name">Patient Name</label>
                 </div>
             </div>
             <!-- task description -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                    <textarea id="task_description" name="task_description" minlength="5"
+                    <textarea id="exam_description" name="exam_description" minlength="5"
                         maxlength="200" class="materialize-textarea validate" required></textarea>
-                    <label for="task_description">Exam Description</label>
+                    <label for="exam_description">Exam Description</label>
                 </div>
             </div>
             <!-- choose due date -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-                    <input id="due_date" name="due_date" type="text" class="datepicker validate" required>
+                    <input id="text" name="due_date" type="text" class="datepicker validate" required>
                     <label for="due_date">Exam Date</label>
                 </div>
             </div>
@@ -48,8 +48,9 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-clock prefix light-blue-text text-darken-4"></i>
-                    <input id="appointment_time" name="appointment_time" type="text" class="datepicker validate" required>
-                    <label for="due_date">Appointment Time</label>
+                    <input id="text" name="appointment_time" minlength="5"
+                        maxlength="200" class="materialize-textarea validate" required></textarea>
+                    <label for="appointment_time">Appointment Time</label>
                 </div>
             </div>
 

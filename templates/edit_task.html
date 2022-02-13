@@ -26,20 +26,20 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-portrait prefix light-blue-text text-darken-4"></i>
-                    <input id="task_name" name="task_name" minlength="5" maxlength="50"
-                        value="{{ task.task_name }}" type="text" class="validate" required>
-                    <label for="task_name">Patient Name</label>
+                    <input id="patient_name" name="patient_name" minlength="5" maxlength="50"
+                        value="{{ task.patient_name }}" type="text" class="validate" required>
+                    <label for="patient_name">Patient Name</label>
                 </div>
             </div>
             <!-- task description -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                    <textarea id="task_description" name="task_description" minlength="5"
+                    <textarea id="exam_description" name="exam_description" minlength="5"
                         maxlength="200" class="materialize-textarea validate" required>
-                        {{- task.task_description -}}
+                        {{- task.exam_description -}}
                     </textarea>
-                    <label for="task_description">Exam Description</label>
+                    <label for="exam_description">Exam Description</label>
                 </div>
             </div>
             <!-- due date picker -->

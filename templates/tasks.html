@@ -30,7 +30,7 @@
                     {% endif %}
                 </div>
                 <div class="col s9">
-                    <strong>{{ task.category_name }}</strong> : {{ task.due_date }} @ {{ task.appointment_time }}
+                    <strong>{{ task.category_name }}</strong> : {{ task.due_date }} @ {{ task.appointment_time }} {{ task.comments }}
                     {% if task.is_urgent == "on" %}
                         <i class="fas fa-exclamation-triangle yellow-text text-lighten-2 tooltipped"
                             data-position="right" data-tooltip="URGENT!"></i>
@@ -41,7 +41,7 @@
                 <strong>{{ task.category_name }}</strong>
                 <p>{{ task.exam_description }}</p>
                 <p>{{ task.patient_name }}</p>
-                <p><em>by: {{ task.created_by }}</em></p>
+                <p><em>Tech: {{ task.created_by }}</em></p>
             </div>
         </li>
         {% endfor %}
