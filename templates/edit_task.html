@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="light-blue-text text-darken-4 center-align">Edit Order Appointment</h3>
+    <h3 class="black-text text-darken-4 center-align">Edit Appointment</h3>
 
     <div class="row card-panel grey lighten-5">
         <form class="col s12" method="POST" action="{{ url_for('edit_task', task_id=task._id) }}">
-            <!-- category selection -->
-			<div class="row">
+            
+            <!-- modality selection -->
+			
+            <div class="row">
 				<div class="input-field col s12">
                     <i class="fas fa-notes-medical prefix light-blue-text text-darken-4"></i>
 					<select id="category_name" name="category_name" class="validate" required>
@@ -22,7 +24,9 @@
 					<label for="category_name">Exam Modality</label>
 				</div>
 			</div>
-            <!-- task name -->
+
+            <!-- patient name -->
+            
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-portrait prefix light-blue-text text-darken-4"></i>
@@ -31,7 +35,9 @@
                     <label for="patient_name">Patient Name</label>
                 </div>
             </div>
-            <!-- task description -->
+
+            <!-- exam description -->
+            
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
@@ -42,7 +48,9 @@
                     <label for="exam_description">Exam Description</label>
                 </div>
             </div>
-            <!-- due date picker -->
+
+            <!-- choose due date -->
+
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
@@ -51,7 +59,20 @@
                     <label for="due_date">Exam Date</label>
                 </div>
             </div>
-            <!-- is urgent toggle -->
+
+            <!-- add apoointment time -->
+            
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-clock prefix light-blue-text text-darken-4"></i>
+                    <input id="text" name="appointment_time" minlength="5"
+                        maxlength="200" class="materialize-textarea validate" required></textarea>
+                    <label for="appointment_time">Appointment Time</label>
+                </div>
+            </div>
+
+            <!-- urgent toggle -->
+
 			<div class="row">
 				<div class="input-field col s12">
 					<div class="switch">
@@ -68,10 +89,14 @@
 					</div>
 				</div>
 			</div>
+
             <!-- submit button -->
+            
             <div class="row">
                 <div class="col s12 center-align">
+            
                     <!-- cancel button -->
+            
                     <a href="{{ url_for('get_tasks') }}" class="btn-large red text-shadow">
                         Cancel <i class="fas fa-times-circle right"></i>
                     </a>
