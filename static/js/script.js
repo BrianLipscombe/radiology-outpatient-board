@@ -9,7 +9,7 @@ $(document).ready(function () {
     $("select").formSelect();
     $(".datepicker").datepicker({
         format: "dd mmmm, yyyy",
-        yearRange: 4,
+        yearRange: 2,
         showClearBtn: true,
         i18n: {
             done: "Select"
