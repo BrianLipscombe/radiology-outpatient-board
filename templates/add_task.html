@@ -3,8 +3,10 @@
 
     <div class="row card-panel grey lighten-5">
         <form class="col s12" method="POST" action="{{ url_for('add_task') }}">
-            <!-- category selection -->
-			<div class="row">
+            
+            <!-- modailty selection -->
+			
+            <div class="row">
 				<div class="input-field col s12">
                     </i><i class="fas fa-notes-medical prefix light-blue-text text-darken-4"></i>
 					<select id="category_name" name="category_name" class="validate" required>
@@ -16,7 +18,9 @@
 					<label for="category_name">Exam Modality</label>
 				</div>
 			</div>
-            <!-- task name -->
+            
+            <!-- patient name -->
+            
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-portrait prefix light-blue-text text-darken-4"></i>
@@ -25,7 +29,9 @@
                     <label for="patient_name">Patient Name</label>
                 </div>
             </div>
-            <!-- task description -->
+           
+            <!-- exam description -->
+           
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
@@ -34,7 +40,9 @@
                     <label for="exam_description">Exam Description</label>
                 </div>
             </div>
+            
             <!-- choose due date -->
+            
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
@@ -42,7 +50,9 @@
                     <label for="due_date">Exam Date</label>
                 </div>
             </div>
+            
             <!-- add time -->
+            
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-clock prefix light-blue-text text-darken-4"></i>
@@ -51,8 +61,10 @@
                     <label for="appointment_time">Appointment Time</label>
                 </div>
             </div>
-            <!-- is urgent toggle -->
-			<div class="row">
+            
+            <!-- urgent toggle -->
+			
+            <div class="row">
 				<div class="input-field col s12">
 					<div class="switch">
                         <i class="fas fa-exclamation-triangle prefix yellow-text text-darken-4"></i>
@@ -64,7 +76,9 @@
 					</div>
 				</div>
 			</div>
+            
             <!-- submit button -->
+            
             <div class="row">
                 <div class="col s12 center-align">
                     <button type="submit" class="btn-large light-blue darken-1 text-shadow">

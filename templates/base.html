@@ -14,8 +14,10 @@
 <body>
 
 	<header>
+        
         <!-- top navbar -->
-		<nav class="nav-extended text-shadow red darken-1">
+		
+        <nav class="nav-extended text-shadow red darken-1">
 			<div class="nav-wrapper">
 				<a href="{{ url_for('get_tasks') }}" class="brand-logo">Radiology Outpatient Order Board</a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
@@ -37,7 +39,8 @@
 		</nav>
 
         <!-- mobile sidenav -->
-		<ul class="sidenav" id="mobile-demo">
+		
+        <ul class="sidenav" id="mobile-demo">
             <li><h4 class="center-align white">Radiology Outpatient Board</h4></li>
             <li><a href="{{ url_for('get_tasks') }}">All Orders</a></li>
             {% if session.user %}
@@ -55,7 +58,9 @@
 	</header>
 
     <section>
+        
         <!-- flash messages -->
+        
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
