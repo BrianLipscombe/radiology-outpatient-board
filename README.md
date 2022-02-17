@@ -115,22 +115,57 @@ All files and pages were validated by direct input with no syntax errors using:
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 * [JSHint](https://jshint.com/)
 
-## Known Bugs
-
-* Editing orders will lead to error page.  
-
+<a name="deployment"></a>
 ## Deployment
 
-### GitHub
+- ### Local copy
+1. Install all the requirements: Go to the workspace. In the terminal window type: pip3 install -r requirements.txt.
+2. Create a database in MongoDB
+    - Signup and login to MongoDB account.
+    - Create a cluster and a database.
+    - Create a collection in the db: categories, tasks, and users.
+    - Add string values for the collection.
+3. Create the environment variables
+    - Create a .gitignore file in the root directory of the project.
+    - Add the env.py file in the .gitignore.
+    - Create the file env.py. This will contain all the envornment variables.
+    - Import os
+    - os.environ.setdefault("IP", "Added by developer")
+    - os.environ.setdefault("PORT", "Added by developer")
+    - os.environ.setdefault("SECRET_KEY", "Added by developer")
+    - os.environ.setdefault("MONGO_URI", "Added by developer")
+    - os.environ.setdefault("MONGO_DBNAME", "Added by developer")
+  4. Run the app: Type python3 app.py in the terminal.
+  
+- ### Heroku Deployment
+1. Set up local workspace for Heroku
+    - In terminal window type: pip3 freeze -- local > requirements.txt. (The file is needed for Heroku to know which filed to install.)
+    - In termial window type: python app.py > Procfile (The file is needed for Heroku to know which file is needed as entry point.)
+2. Set up Heroku: create a Heroku account and create a new app and select region.
+3. Deployment method 'Github'
+    - Click on the Connect to GitHub section in the deploy tab in Heroku.
+    - Search to connect with the proper repository.
+    - When repository appears click on connect to connect the repository with Heroku.
+    - Go to the settings app in Heroku and go to Config Vars. Click on Reveal Config Vars.
+    - Enter the variables contained in your env.py file. it is about: IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME
+4. Push the requirements.txt and Procfile to repository.
+    - $ git add requirements.txt
+    - $ git commit -m "Add requirements.txt"
+    - $ git add Procfile 
+    - $ git commit -m "Add Procfile"
+5. Automatic deployment: Go to the deploy tab in Heroku and scroll down to Aotmatic deployments. Click on Enable Automatic Deploys. By Manual deploy click on Deploy Branch.
 
-This project was deployed to the developer's respository page:
-https://github.com/BrianLipscombe/cryptocurrency-quiz-game
+  Heroku will receive the code from Github and host the app using the required packages. Click on Open app in the right corner of Heroku account. The app wil open and the live link is available from the address bar.
+
+## Known Bugs
+
+* Editing orders will lead to error page (this error has benn fixed by updating the requirements.txt file).
 
 ## Credits
 
 * Code
 
-    Code used as a starting template was borrowed from the Code Institute Data Centric Design Mini Project by Tim Nelson [here](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/) with the final Github repo [here.](https://github.com/Code-Institute-Solutions/TaskManagerAuth/tree/main/08-SearchingWithinTheDatabase/01-text_index_searching)
+    Code used as a template was borrowed from the Code Institute Data Centric Design Mini Project by Tim Nelson [here](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/) with his final Github commit [here.](https://github.com/Code-Institute-Solutions/TaskManagerAuth/tree/main/08-SearchingWithinTheDatabase/01-text_index_searching)
     
     Code for icons from [Font Awesome](https://fontawesome.com/).
 
@@ -140,10 +175,10 @@ https://github.com/BrianLipscombe/cryptocurrency-quiz-game
 
 * Guidance and Moral Support
 
-    Caleb Mbakwe: My mentor Caleb for helping me and for providing professional feedback even though time and scheduling has been an enormous challenge for me.
+    Caleb Mbakwe: My mentor Caleb for helping me and for providing professional feedback even though time and scheduling has been an enormous challenge for me;
 
-    Code Institute on Slack:
+    Code Institute on Slack;
 
-    My family for being patient and understanding when most of my time is absorbed by work and school. 
+    And, my family for being patient and understanding when most of my time is absorbed by work and school. 
 
 This site was developed for educational purposes.
