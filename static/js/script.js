@@ -1,4 +1,4 @@
-/*
+/*  Code used as a template was borrowed from the Code Institute Data Centric Design Mini Project by Tim Nelson at https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/ with his final Github commit at https://github.com/Code-Institute-Solutions/TaskManagerAuth/tree/main/08-SearchingWithinTheDatabase/01-text_index_searching
     jQuery for MaterializeCSS initialization
 */
 

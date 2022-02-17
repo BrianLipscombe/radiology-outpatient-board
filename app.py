@@ -1,3 +1,5 @@
+# Code used as a template was borrowed from the Code Institute Data Centric Design Mini Project by Tim Nelson at https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/ with his final Github commit at https://github.com/Code-Institute-Solutions/TaskManagerAuth/tree/main/08-SearchingWithinTheDatabase/01-text_index_searching
+
 import os
 from flask import (
     Flask, flash, render_template,
@@ -98,6 +100,33 @@ def profile(username):
     return redirect(url_for("login"))
 
 
+@app.route("/edit_profile/<users_id>", methods=["GET", "POST"])
+def edit_profile(users_id):
+    if request.method == "POST":
+        submit = {
+            "username": request.form.get("username")
+        }
+        mongo.db.users.update({"_id": ObjectId(users_id)}, submit)
+        flash("Profile Successfully Updated")
+        return redirect(url_for("get_categories"))
+
+    category = mongo.db.users.find_one({"_id": ObjectId(users_id)})
+    return render_template("edit_profile.html", username=username)
+
+
+@app.route("/delete_users/<username_id>")
+def delete_users(username_id):
+    mongo.db.users.remove({"_id": ObjectId(username_id)})
+    flash("Profile Successfully Deleted")
+    return redirect(url_for("get_categories"))
+
+
+
+
+
+    
+
+
 @app.route("/logout")
 def logout():
     # remove user from session cookie
@@ -121,7 +150,7 @@ def add_task():
             "created_by": session["user"]
         }
         mongo.db.tasks.insert_one(task)
-        flash("Task Successfully Added")
+        flash("Order Successfully Added")
         return redirect(url_for("get_tasks"))
 
     categories = mongo.db.categories.find().sort("category_name", 1)
@@ -138,10 +167,12 @@ def edit_task(task_id):
             "exam_description": request.form.get("exam_description"),
             "is_urgent": is_urgent,
             "due_date": request.form.get("due_date"),
+            "appointment_time": request.form.get("appointment_time"),
+            "comments": request.form.get("comments"),
             "created_by": session["user"]
         }
         mongo.db.tasks.update({"_id": ObjectId(task_id)}, submit)
-        flash("Task Successfully Updated")
+        flash("Order Successfully Updated")
 
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
@@ -151,7 +182,7 @@ def edit_task(task_id):
 @app.route("/delete_task/<task_id>")
 def delete_task(task_id):
     mongo.db.tasks.remove({"_id": ObjectId(task_id)})
-    flash("Task Successfully Deleted")
+    flash("Order Successfully Deleted")
     return redirect(url_for("get_tasks"))
 
 
