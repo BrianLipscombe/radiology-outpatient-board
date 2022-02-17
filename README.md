@@ -4,49 +4,52 @@
 
 This is Brian Lipscombe's third Milestone Project at [Code Institute](https://codeinstitute.net). It was built using HTML5, CSS3, JavaScript, Python+Flask, MongoDB, Gitpod, and deployed on the hosting platform Heroku. It is designed with Code Institute's Assessment Handbook Project Idea 0 in mind - Bring your own idea to life, based on providing value to users to address a specific real or imagined need.
 
-It is intended to provide management support and to serve as a reminder to diagnostic medical imgaging techs of outpatient appointments scheduled within a radiology department. In a busy hospital setting, balancing scheduled appointments for outpatients with spontaneous STAT orders constantly being placed from the Emergency Department as well as prolonged, complicated exam orders from the Intensive Care Unit can be very challenging, and an app like this could provide some added organization.  
+It is not intended for public use but instead intended to provide management support for orders within a radiology department, or tandem group of radiology departments, within a hospital setting. In such a busy setting, balancing scheduled appointments for outpatients with spontaneous STAT orders being placed from the Emergency Department as well as prolonged, complicated exam orders from the Intensive Care Unit can be very challenging, and an app like this could provide some added organization and time-management.  
 
-The app can be found [here.](https://8080-brianlipscombe-radiology-2sjdmmrwjw4.ws-us31.gitpod.io/get_tasks)
+The app can be found on Heroku [here.](https://8080-brianlipscombe-radiology-2sjdmmrwjw4.ws-us31.gitpod.io/get_tasks)
 
 ## User Experience (UX)
 
 * User Stories
 
-    1. Visitor Goals
+1. Radiology Employee Goals
+    - Register a username and password
+    - Log in
+    - Add outpatient orders from hardcopies in fax basket, including modality, patient name, exam description, date, time, any pertinent comments, and indicate whether the exam is urgent or not
+    - Edit orders if any information changes
+    - Delete completed orders
 
-    - Register
-    - Add orders
-    - Edit orders
-
-    2. Owner Goals
-        
-    - Manage outpatient orders for effeciently
-    - Ensure only registered staff memnbers have access to the app to protect patient information
-    - Allow users to add and edit order information
-    - Allow users to add comments to help expedite appointments 
+2. Owner Goals   
+    - Allow radiology employees to input, edit, complete, and manage outpatient orders more effeciently.
+    - Ensure only registered staff memnbers have access to the app and is only used within the radiology department to protect patient information.
+    - Allow users to create new profiles. 
 
 * Design
 
-    1. Color Scheme
+1. Color Scheme
 
-        Black is used for each collapsible header to represent radiology which in some hospitals radiology techs wear black scrubs. White with a bit transparency is used to add proper contrast against the black headers.  
+    - Black is used for each collapsible header because in some hospitals radiology teams wear black scrubs to quickly differentiate from other hospital staff members.
+    - White with a bit transparency is used to add contrast against the black headers.
+    - Red is used in the top navbar to mimic the hospital's red exterior signage.
+    - Blues are used in some text and buttons to contrast the urgency of red, to bring a form of aesthetic balance.  
 
-    2. Imagery
+2. Imagery
 
-        The background image was taken from the UCI Medical Center website [here](https://uci.edu/presidential-gateway/overview/_img/overview-future-hospital-1200x570.jpg) then modified using Adobe Photoshop.
+    The background image was taken from the UCI Medical Center website [here](https://uci.edu/presidential-gateway/overview/_img/overview-future-hospital-1200x570.jpg) then modified using Adobe Photoshop.
 
-    3. Typography
+3. Typography
 
-        The fonts are kept basic for easy readability.
+    The fonts are kept basic for easy readability.
 
 * Wireframe
 
-    View the developer's Balsamiq mock-up [here.](https://slack-files.com/T0L30B202-F032TL0U7FZ-9c9a17a249)
+    View the Balsamiq wireframe [here.](https://slack-files.com/T0L30B202-F032TL0U7FZ-9c9a17a249)
 
 ## Features
 
 * Responsive on all device sizes.
-* Interactive elements: Buttons, answer options, scoring system.
+* Interactive elements: Search bar, Buttons, collapsible popout, and calendar date picker. 
+* Ability to create, read, upadate, and delete orders.
 
 ## Technologies Used
 
@@ -56,9 +59,13 @@ The app can be found [here.](https://8080-brianlipscombe-radiology-2sjdmmrwjw4.w
 
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-* [Font Awesome](https://fontawesome.com/)
+* [Python3](https://www.python.org/download/releases/3.0/)
 
-* [Google fonts](https://fonts.google.com/)
+* [MongoDB](https://www.mongodb.com/)
+
+* [Heroku](https://signup.heroku.com/)
+
+* [Font Awesome](https://fontawesome.com/)
 
 * [Github](https://github.com/)
 
@@ -73,35 +80,30 @@ The app can be found [here.](https://8080-brianlipscombe-radiology-2sjdmmrwjw4.w
 ## Testing
 
 1. Manual Testing
-    * Buttons
+* Buttons
+    - If register button is clicked, register page allows user to register username and password.
+    - If Log In button is clicked, log in page allows user to input username and password to access the order board.
+    - If All Orders button is clicked, user is brought back to the main page.
 
-        - If All Orders button is clicked, 
 
-    * Collapsible
-
-        - 
-
-    * Result Box Text
-
-        - Any combination of correct or incorrect answers "END OF LINE!" text appears indicating completion;
-        - If the user scored less than 1 correct asnwer "YOU HAVE BEEN FORCEFULLY LIQUIDATED!!!" text appears;
-        - If the user scored more than 1 correct answers "Buy low and sell high, not the other way around!" text appears;
-        - If the user scored more than 5 correct answer "PARABOLIC ACTION TO THE MOON!!!" text appears;
-        - All functions are confirmed to work
+* Collapsible
+    - If the arrow buttons are clicked, the popup opens displaying the modality, exam description, patient's name, and the username of the tech who added the order.
+    - If the user is logged in and if the complete/delete button is clicked, the order is removed from the database.
+    - If the user is logged in and the edit button is clicked, the edit task page aloows the user to edit the order.
     
-    * Responsiveness
+* Responsiveness
 
-        - This project is confirmed to be responsive on all standard screen sizes using the devtools device toolbar
+    - This project is confirmed to be responsive on all standard screen sizes using the devtools device toolbar
 
-    * Browser Validation
+* Browser Validation
 
-        - This project is confirmed to work with different browsers: Chrome and Internet Explorer
+    - This project is confirmed to work with different browsers: Chrome and Internet Explorer
 
 2. Automated Testing
 
-    * Code Testing 
+* Code Testing 
 
-        - This project has been tested using different browsers and different mobile devices such as iphone, Android, and laptops, as well as on a desktop computer.
+    - This project has been tested using different browsers and different mobile devices such as iphone, Android, and laptops, as well as on a desktop computer.
 
     * Lighthouse Auditing
 
@@ -159,7 +161,15 @@ All files and pages were validated by direct input with no syntax errors using:
 
 ## Known Bugs
 
-* Editing orders will lead to error page (this error has benn fixed by updating the requirements.txt file).
+* Sometimes the exam date and appointment time options will not function properly when clicked on. Other times they do function properly, especially if the tab button is used to advance into those input fields instead of clicking directly on them.
+* Editing orders will lead to error page (this error has been fixed by updating the requirements.txt file).
+
+## Future Improvements
+
+* Add better CRUD functionality for users to edit their profiles.
+* Make entities more consistent. Instead of using tasks and orders for the same purpose, make all entities into orders, not tasks.
+* Make the collapsible display orders in chronological order by the importance of the due dates, instead of by the order of when new orders were added.
+* Improve the visibilty of the lower page text such as on the Log In and Regester pages.
 
 ## Credits
 
