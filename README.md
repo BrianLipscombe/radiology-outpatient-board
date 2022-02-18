@@ -49,7 +49,7 @@ The app can be found on Heroku [here.](https://8080-brianlipscombe-radiology-2sj
 ## Features
 
 * Responsive on all device sizes.
-* Interactive elements: Search bar, Buttons, collapsible popout, and calendar date picker. 
+* Interactive elements: Search bar, buttons, collapsible popout, and calendar date picker. 
 * Ability to create, read, upadate, and delete orders.
 
 ## Technologies Used
@@ -170,7 +170,7 @@ All files and pages were validated by direct input using:
 
 ## Known Bugs
 
-* Sometimes the exam date and appointment time options will not function properly when clicked on. Other times they do function properly, especially if the tab button is used to advance into those input fields instead of clicking directly on them.
+* Sometimes the exam date and appointment time options will not function properly when clicked on. Other times they do function properly, especially if the tab button is used to advance into those input fields instead of clicking directly on them (this bug seems to have been fixed).
 * Editing orders will lead to error page (this error has been fixed by updating the requirements.txt file).
 
 ## Future Improvements
