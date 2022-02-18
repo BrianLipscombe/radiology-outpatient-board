@@ -8,6 +8,8 @@ The idea is not intended for public use but instead intended to provide manageme
 
 The app can be found on Heroku [here.](https://radiology-outpatient-board.herokuapp.com)
 
+It can also be found on gitpod [here]()
+
 ## User Experience (UX)
 
 * User Stories
@@ -77,6 +79,8 @@ The app can be found on Heroku [here.](https://radiology-outpatient-board.heroku
 * [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
 
 * [Balsamiq](https://balsamiq.com/)
+
+* [Materialize](https://materializecss.com/)
 
 ## Testing
 
