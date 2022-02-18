@@ -6,7 +6,7 @@ This is Brian Lipscombe's third Milestone Project, Python and Data Centric Devel
 
 The idea is not intended for public use but instead intended to provide management support for orders within a radiology department, or tandem group of radiology departments, within a hospital setting. In such a busy setting, balancing scheduled appointments for outpatients with spontaneous STAT orders being placed from the Emergency Department as well as prolonged, complicated exam orders from the Intensive Care Unit can be very challenging. An app like this could provide some added organization and time-management to ensure outpatients get seen at or near their date and time of appointment.  
 
-The app can be found on Heroku [here.](https://8080-brianlipscombe-radiology-2sjdmmrwjw4.ws-us31.gitpod.io/get_tasks)
+The app can be found on Heroku [here.](https://radiology-outpatient-board.herokuapp.com)
 
 ## User Experience (UX)
 
