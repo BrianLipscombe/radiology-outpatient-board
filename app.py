@@ -121,12 +121,6 @@ def delete_users(username_id):
     return redirect(url_for("get_categories"))
 
 
-
-
-
-    
-
-
 @app.route("/logout")
 def logout():
     # remove user from session cookie
