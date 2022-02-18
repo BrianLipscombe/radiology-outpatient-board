@@ -4,7 +4,7 @@
 
 This is Brian Lipscombe's third Milestone Project at [Code Institute](https://codeinstitute.net). It was built using HTML5, CSS3, JavaScript, Python+Flask, MongoDB, Gitpod, and deployed on the hosting platform Heroku. It is designed with Code Institute's Assessment Handbook Project Idea 0 in mind - Bring your own idea to life, based on providing value to users to address a specific real or imagined need.
 
-It is not intended for public use but instead intended to provide management support for orders within a radiology department, or tandem group of radiology departments, within a hospital setting. In such a busy setting, balancing scheduled appointments for outpatients with spontaneous STAT orders being placed from the Emergency Department as well as prolonged, complicated exam orders from the Intensive Care Unit can be very challenging, and an app like this could provide some added organization and time-management.  
+The idea is not intended for public use but instead intended to provide management support for orders within a radiology department, or tandem group of radiology departments, within a hospital setting. In such a busy setting, balancing scheduled appointments for outpatients with spontaneous STAT orders being placed from the Emergency Department as well as prolonged, complicated exam orders from the Intensive Care Unit can be very challenging. An app like this could provide some added organization and time-management to ensure outpatients get seen at or near their dat and time of appointment.  
 
 The app can be found on Heroku [here.](https://8080-brianlipscombe-radiology-2sjdmmrwjw4.ws-us31.gitpod.io/get_tasks)
 
@@ -179,15 +179,15 @@ All files and pages were validated by direct input with no syntax errors using:
     
     Code for icons from [Font Awesome](https://fontawesome.com/).
 
-    All other code was written by the developer.
+    All other code was written or changed by the developer.
 
 ## Acknowledgements
 
 * Guidance and Moral Support
 
-    Caleb Mbakwe: My mentor Caleb for helping me and for providing professional feedback even though time and scheduling has been an enormous challenge for me;
-
     Code Institute on Slack;
+
+    My mentor Caleb Mbakwe;
 
     And, my family for being patient and understanding when most of my time is absorbed by work and school. 
 
