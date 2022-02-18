@@ -10,7 +10,7 @@
 			
             <div class="row">
 				<div class="input-field col s12">
-                    </i><i class="fas fa-notes-medical prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-notes-medical prefix light-blue-text text-darken-4"></i>
 					<select id="category_name" name="category_name" class="validate" required>
                         <option value="" disabled selected>Choose Modality</option>
                         {% for category in categories %}
@@ -48,8 +48,8 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-                    <input id="text" name="due_date" type="text" class="datepicker validate" required>
-                    <label for="due_date">Exam Date</label>
+                    <input id="due_date" name="due_date" type="text" class="datepicker validate" required>
+                    <label for="due_date">Due Date</label>
                 </div>
             </div>
             
@@ -58,8 +58,8 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-clock prefix light-blue-text text-darken-4"></i>
-                    <input id="text" name="appointment_time" minlength="5"
-                        maxlength="200" class="materialize-textarea validate" required></textarea>
+                    <input id="appointment_time" name="appointment_time" minlength="5"
+                        maxlength="200" class="materialize-textarea validate" required>
                     <label for="appointment_time">Appointment Time</label>
                 </div>
             </div>
