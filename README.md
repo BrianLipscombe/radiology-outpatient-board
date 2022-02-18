@@ -2,9 +2,9 @@
 <h1 align="center">Radiology Outpatient Order Board App</h1>
 <h1 align="center"><img src="https://github.com/BrianLipscombe/radiology-outpatient-board/blob/main/static/images/banner.jpg?raw=true" /></h1>
 
-This is Brian Lipscombe's third Milestone Project at [Code Institute](https://codeinstitute.net). It was built using HTML5, CSS3, JavaScript, Python+Flask, MongoDB, Gitpod, and deployed on the hosting platform Heroku. It is designed with Code Institute's Assessment Handbook Project Idea 0 in mind - Bring your own idea to life, based on providing value to users to address a specific real or imagined need.
+This is Brian Lipscombe's third Milestone Project, Python and Data Centric Development, at [Code Institute](https://codeinstitute.net). It was built using HTML5, CSS3, JavaScript, Python+Flask, MongoDB, Materialize, Gitpod, and deployed on the hosting platform Heroku. It is designed with Code Institute's Assessment Handbook Project Idea 0 in mind - Bring your own idea to life, based on providing value to users to address a specific real or imagined need.
 
-The idea is not intended for public use but instead intended to provide management support for orders within a radiology department, or tandem group of radiology departments, within a hospital setting. In such a busy setting, balancing scheduled appointments for outpatients with spontaneous STAT orders being placed from the Emergency Department as well as prolonged, complicated exam orders from the Intensive Care Unit can be very challenging. An app like this could provide some added organization and time-management to ensure outpatients get seen at or near their dat and time of appointment.  
+The idea is not intended for public use but instead intended to provide management support for orders within a radiology department, or tandem group of radiology departments, within a hospital setting. In such a busy setting, balancing scheduled appointments for outpatients with spontaneous STAT orders being placed from the Emergency Department as well as prolonged, complicated exam orders from the Intensive Care Unit can be very challenging. An app like this could provide some added organization and time-management to ensure outpatients get seen at or near their date and time of appointment.  
 
 The app can be found on Heroku [here.](https://8080-brianlipscombe-radiology-2sjdmmrwjw4.ws-us31.gitpod.io/get_tasks)
 
@@ -13,23 +13,24 @@ The app can be found on Heroku [here.](https://8080-brianlipscombe-radiology-2sj
 * User Stories
 
 1. Radiology Employee Goals
-    - Register a username and password
-    - Log in
-    - Add outpatient orders from hardcopies in fax basket, including modality, patient name, exam description, date, time, any pertinent comments, and indicate whether the exam is urgent or not
-    - Edit orders if any information changes
-    - Delete completed orders
+    - Register a username and password.
+    - Log in.
+    - Add outpatient orders (from hard copies possibly in fax print-out basket), including modality, patient name, exam description, date, time, any pertinent comments, and indicate whether the exam is urgent or not.
+    - Edit orders if any information changes.
+    - Delete completed orders.
 
-2. Owner Goals   
+2. Owner Goals
+    - Provide an app that can help the workflow of hospital orders.
     - Allow radiology employees to input, edit, complete, and manage outpatient orders more effeciently.
-    - Ensure only registered staff memnbers have access to the app and is only used within the radiology department to protect patient information.
-    - Allow users to create new profiles. 
+    - Ensure only registered staff members have access to the app and is only used within the radiology department to protect patient information.
+    - Allow users to create new profiles after initial registration. 
 
 * Design
 
 1. Color Scheme
 
-    - Black is used for each collapsible header because in some hospitals radiology teams wear black scrubs to quickly differentiate from other hospital staff members.
-    - White with a bit transparency is used to add contrast against the black headers.
+    - Black is used for each collapsible header because in some hospitals radiology teams wear black scrubs to be quickly differentiated from other hospital staff members.
+    - White, with a bit transparency is used to add contrast against the black headers.
     - Red is used in the top navbar to mimic the hospital's red exterior signage.
     - Blues are used in some text and buttons to contrast the urgency of red, to bring a form of aesthetic balance.  
 
@@ -84,12 +85,13 @@ The app can be found on Heroku [here.](https://8080-brianlipscombe-radiology-2sj
     - If register button is clicked, register page allows user to register username and password.
     - If Log In button is clicked, log in page allows user to input username and password to access the order board.
     - If All Orders button is clicked, user is brought back to the main page.
-
+    - If the searsch button is clicked after text in the search field is inputted that matches any text within any of the orders, then only the orders with the matching text are displayed.
+    - When the reset button is clicked, the text inputted in the search field is deleted and the search option is reset.
 
 * Collapsible
-    - If the arrow buttons are clicked, the popup opens displaying the modality, exam description, patient's name, and the username of the tech who added the order.
+    - If the double-down arrow buttons are clicked, the popup opens displaying the modality, exam description, patient's name, and the username of the tech who added the order.
     - If the user is logged in and if the complete/delete button is clicked, the order is removed from the database.
-    - If the user is logged in and the edit button is clicked, the edit task page aloows the user to edit the order.
+    - If the user is logged in and the edit button is clicked, the edit task page allows the user to edit the order.
     
 * Responsiveness
 
@@ -105,19 +107,26 @@ The app can be found on Heroku [here.](https://8080-brianlipscombe-radiology-2sj
 
     - This project has been tested using different browsers and different mobile devices such as iphone, Android, and laptops, as well as on a desktop computer.
 
-    * Lighthouse Auditing
+* Lighthouse Auditing
 
-        - This project scores 100 for Accessibility and Best Practices for mobile devices, and 100 for Accessibility, Best Practices, and Performance for desktop devices
+    - This project scores 100 for Performance, Accessibility, and Best Practices.
 
 All pages were tested on multiple resolutions for proper responsiveness.
 
-All files and pages were validated by direct input with no syntax errors using:
+All files and pages were validated by direct input using:
 
 * [Nu Html Checker](https://validator.w3.org/#validate_by_input)
-* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-* [JSHint](https://jshint.com/)
+    - When testing the HTML code, syntax issues arise on all pages seemingly related to the use of jinja templating and other code borrowed directly from the Data Centric Design mini project.
 
-<a name="deployment"></a>
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+    - No error found.
+
+* [JSHint](https://jshint.com/)
+    - No error found.
+
+* [PEP8](http://pep8online.com/)
+    - No error found.
+
 ## Deployment
 
 - ### Local copy
