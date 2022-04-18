@@ -21,7 +21,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-@app.route("/login", methods=["GET", "POST"])
+@app.route("/index", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
         # check if username exists in db
@@ -37,14 +37,14 @@ def login():
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
-                return redirect(url_for("login"))
+                return redirect(url_for("index"))
 
         else:
             # username doesn't exist
             flash("Incorrect Username and/or Password")
-            return redirect(url_for("login"))
+            return redirect(url_for("index"))
 
-    return render_template("login.html")
+    return render_template("index.html")
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
@@ -56,7 +56,7 @@ def profile(username):
     if session["user"]:
         return render_template("profile.html", username=username)
 
-    return redirect(url_for("login"))
+    return redirect(url_for("index"))
 
 
 @app.route("/")
