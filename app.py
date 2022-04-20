@@ -19,7 +19,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
+@app.route("/")
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -58,7 +58,7 @@ def profile(username):
     return redirect(url_for("login"))
 
 
-@app.route("/")
+
 @app.route("/get_tasks")
 def get_tasks():
     tasks = list(mongo.db.tasks.find())
