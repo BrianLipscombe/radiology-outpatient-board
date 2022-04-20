@@ -8,7 +8,7 @@ The idea is not intended for public use but instead intended to provide manageme
 
 The app can be found on Heroku [here.](https://radiology-outpatient-board.herokuapp.com)
 
-It can also be found on gitpod [here]()
+It can also be found on gitpod [here](https://8080-brianlipscombe-radiology-2sjdmmrwjw4.ws-us34.gitpod.io/get_tasks)
 
 ## User Experience (UX)
 
