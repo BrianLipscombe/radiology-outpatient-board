@@ -1,5 +1,4 @@
-# Code used as a template was borrowed from the Code Institute 
-# Data Centric Design Mini Project by Tim Nelson
+# Code used as a template was borrowed from the Code Institute Data Centric Design Mini Project by Tim Nelson
 
 import os
 from flask import (
@@ -21,7 +20,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-@app.route("/index", methods=["GET", "POST"])
+@app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
         # check if username exists in db
@@ -37,14 +36,14 @@ def login():
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
-                return redirect(url_for("index"))
+                return redirect(url_for("login"))
 
         else:
             # username doesn't exist
             flash("Incorrect Username and/or Password")
-            return redirect(url_for("index"))
+            return redirect(url_for("login"))
 
-    return render_template("index.html")
+    return render_template("login.html")
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
@@ -56,7 +55,7 @@ def profile(username):
     if session["user"]:
         return render_template("profile.html", username=username)
 
-    return redirect(url_for("index"))
+    return redirect(url_for("login"))
 
 
 @app.route("/")

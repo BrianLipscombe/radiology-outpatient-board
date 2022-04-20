@@ -36,17 +36,16 @@
                         Log In <i class="fas fa-sign-in-alt"></i>
                     </button>
                 </div>
+                <div class="row">
+                    <div class="col s12">
+                        <p class="center-align">
+                            Haven't registered yet?
+                            <a href="{{ url_for('register') }}" class="light-blue-text text-darken-4">Click here</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </form>
-    </div>
-
-    <div class="row">
-        <div class="col s12">
-            <p class="center-align">
-                Haven't registered yet?
-                <a href="{{ url_for('register') }}" class="light-blue-text text-darken-4">Click here</a>
-            </p>
-        </div>
     </div>
 
 {% endblock %}
