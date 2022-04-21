@@ -4,7 +4,9 @@
 
 This is Brian Lipscombe's third Milestone Project, Python and Data Centric Development, at [Code Institute](https://codeinstitute.net). It was built using HTML5, CSS3, JavaScript, Python+Flask, MongoDB, Materialize, Gitpod, and deployed on the hosting platform Heroku. It is designed with Code Institute's Assessment Handbook Project Idea 0 in mind - Bring your own idea to life, based on providing value to users to address a specific real or imagined need.
 
-The idea is not intended for public use but instead intended to provide management support for orders within a radiology department, or tandem group of radiology departments, within a hospital setting. In such a busy setting, balancing scheduled appointments for outpatients with spontaneous STAT orders being placed from the Emergency Department as well as prolonged, complicated exam orders from the Intensive Care Unit can be very challenging. An app like this could provide some added organization and time-management to ensure outpatients get seen at or near their date and time of appointment.  
+The idea is not intended for public use or to sell any products but instead it is intended to provide management support for physician orders within a radiology department, or tandem group of radiology departments, within a hospital setting.
+
+In such a busy setting, balancing scheduled appointments for outpatients with spontaneous STAT orders being placed from the Emergency Department as well as prolonged, complicated exam orders from the Intensive Care Unit can be very challenging. An app like this could provide some added organization and time-management to ensure outpatients get seen at or near their date and time of appointment.  
 
 The app can be found on Heroku [here.](https://radiology-outpatient-board.herokuapp.com)
 
@@ -84,7 +86,30 @@ It can also be found on gitpod [here](https://8080-brianlipscombe-radiology-2sjd
 
 ## Testing
 
-1. Manual Testing
+Manual Testing
+
+* Click on all navigation links to verify that they direct to the indicated page.
+
+* Verify that the navigation menu shifts to and from the hamburger icon on the appropriate size screens. 
+
+* Verify that the log in button directs the user to the orders page within their profile to edit/add orders.
+
+* Verify that the down arrows extend the collapsible and displays the details of each order when first clicked.
+
+* Verify that the down arrows retract the collapsible details when clicked a second time. 
+
+* Verify that the 'search' button retrieves order information that is relevant or matches the key terms the user is searching for.
+
+* Verify 'New Order' button links to the add task page.
+
+* Verify that the new order input fields allow the user to choose or input the necessary information. 
+
+* Verify that the 'complete/delete' buttons delete the orders.
+
+* Verfiy that the 'edit' buttons direct the user to the edit task page where orders can be edited.
+
+* Verify that navigation elements work the same as all other pages.
+
 * Buttons
     - If register button is clicked, register page allows user to register username and password.
     - If Log In button is clicked, log in page allows user to input username and password to access the order board.
@@ -96,16 +121,14 @@ It can also be found on gitpod [here](https://8080-brianlipscombe-radiology-2sjd
     - If the double-down arrow buttons are clicked, the popup opens displaying the modality, exam description, patient's name, and the username of the tech who added the order.
     - If the user is logged in and if the complete/delete button is clicked, the order is removed from the database.
     - If the user is logged in and the edit button is clicked, the edit task page allows the user to edit the order.
-    
+
 * Responsiveness
 
-    - This project is confirmed to be responsive on all standard screen sizes using the devtools device toolbar
+    - This project is confirmed to be responsive on all standard screen sizes using the devtools device toolbar.
 
 * Browser Validation
 
-    - This project is confirmed to work with different browsers: Chrome and Internet Explorer
-
-2. Automated Testing
+    - This project is confirmed to work with different browsers: Chrome and Internet Explorer.
 
 * Code Testing 
 
@@ -177,12 +200,35 @@ All files and pages were validated by direct input using:
 * Sometimes the exam date and appointment time options will not function properly when clicked on. Other times they do function properly, especially if the tab button is used to advance into those input fields instead of clicking directly on them (this bug seems to have been fixed).
 * Editing orders will lead to error page (this error has been fixed by updating the requirements.txt file).
 
+## RESOLVED BUGS AND IMPROVEMENTS SINCE PREVIOUS SUBMISSION:
+
+* DEBUG mode is no longer turned on in production version of code. Within the app.py file debug=True was changed to debug=Flase. 
+
+* In order to improve UI/UX, I changed the landing page to the log in page instead of landing directly onto the orders page.
+
+* In order to improve UI/UX, after a user logs in they are directed to the orders page within their profile, which they can add/edit/delete orders from.
+
+* In order to improve UI/UX, I removed the 'log in' button from the top navbar while the user is already on the log in page.
+
+* In order to improve UI/UX, the log in and register pages should no longer be visible when a user is logged in.
+
+* In order to improve UI/UX, I removed the 'reset' button previously used to reset the search field.
+
+* In order to improve UI/UX, I moved the main collapsible up to utilize more screen space.
+
+* In order to improve UI/UX, I moved the log in and registration panels up to utilize more space, and for a more consistency.
+
+* In order to improve UI/UX, I moved the hamburger icon to the upper right corner.
+
+* In order to improve UI/UX, I moved moved the 'Haven't registered yet? Click here' text/button into the log in card panel for improved visibility.
+
+* In order to hopefully meet submission criterion, the tesing guidelines above within this README.md file have been revised and etxtended so that they are no longer considered missing or incomprehensible.
+
 ## Future Improvements
 
 * Add better CRUD functionality for users to edit their profiles.
 * Make entities more consistent. Instead of using tasks and orders for the same purpose, make all entities into orders, not tasks.
 * Make the collapsible display orders in chronological order by the importance of the due dates, instead of by the order of when new orders were added.
-* Improve the visibilty of the lower page text such as on the Log In and Regester pages.
 
 ## Credits
 
@@ -200,7 +246,7 @@ All files and pages were validated by direct input using:
 
     Code Institute on Slack;
 
-    My mentor Caleb Mbakwe;
+    My mentor Narender Singh;
 
     And, my family for being patient and understanding when most of my time is absorbed by work and school. 
 
