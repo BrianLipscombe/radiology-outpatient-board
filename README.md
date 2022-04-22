@@ -202,7 +202,7 @@ All files and pages were validated by direct input using:
 
 * In order to improve UI/UX, I moved moved the 'Haven't registered yet? Click here' text/button into the bottom of the log in panel for improved visibility.
 
-* In order to hopefully meet submission criterion, the tesing guidelines above within this README.md file have been revised and extended so that they are no longer considered missing or incomprehensible.
+* In order to hopefully meet submission criteria, the testing guidelines above within this README.md file have been revised and extended so that they are no longer considered "missing" or "incomprehensible."
 
 ## Future Improvements
 
