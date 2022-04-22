@@ -8,9 +8,9 @@ The idea is not intended for public use or to sell any products but instead it i
 
 In such a busy setting, balancing scheduled appointments for outpatients with spontaneous STAT orders being placed from the Emergency Department as well as prolonged, complicated exam orders from the Intensive Care Unit can be very challenging. An app like this could provide some added organization and time-management to ensure outpatients get seen at or near their date and time of appointment.  
 
-The app can be found on Heroku [here.](https://radiology-outpatient-board.herokuapp.com)
+The app can be found on Heroku [here.](https://radiology-board.herokuapp.com/)
 
-It can also be found on gitpod [here](https://8080-brianlipscombe-radiology-2sjdmmrwjw4.ws-us34.gitpod.io/login)
+It can also be found on gitpod [here](https://8080-brianlipscombe-radiology-2sjdmmrwjw4.ws-us41.gitpod.io/)
 
 ## User Experience (UX)
 
