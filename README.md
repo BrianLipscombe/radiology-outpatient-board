@@ -237,11 +237,13 @@ All files and pages were validated by direct input using:
 
 * Fix the appointment time icon to actually work when clicked and provide ease of adding appointment times instead of users having to manually type times into the field.
 
-## Future Improvements for future projects
+## Future Improvements for Future Projects
 
-* Choose a better concept that more people can relate to that can be used on a global scale that maybe offers/sells common products and/or services.
+* Don't rely on source code from module walk-throughs as a template. Learn to code from scratch.
 
-* Don't use Materialize.
+* Choose a better concept that more people can relate to that can be used on a global scale that maybe offers and sells common products or services.
+
+* Don't use Materialize ever again.
 
 ## Credits
 
@@ -259,8 +261,8 @@ All files and pages were validated by direct input using:
 
     Code Institute on Slack;
 
-    My mentor Narender Singh;
+    My mentor Narender Singh for helping me make improvements to this project for its resubmission on short notice;
 
-    And, my family for being patient and understanding when most of my time is absorbed by work and school. 
+    And, my family for being patient and understanding when most of my time is absorbed by work and school, and for continuing to support me even when I fail. 
 
 This site was developed for educational purposes.
