@@ -44,10 +44,6 @@ The app can be found on Heroku [here.](https://radiology-board.herokuapp.com/)
 
     The fonts are kept basic for easy readability.
 
-* Wireframe
-
-    View the Balsamiq wireframe [here.](https://slack-files.com/T0L30B202-F032TL0U7FZ-9c9a17a249)
-
 ## Features
 
 * Responsive on all device sizes.
