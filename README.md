@@ -10,8 +10,6 @@ In such a busy setting, balancing scheduled appointments for outpatients with sp
 
 The app can be found on Heroku [here.](https://radiology-board.herokuapp.com/)
 
-It can also be found on gitpod [here](https://8080-brianlipscombe-radiology-2sjdmmrwjw4.ws-us41.gitpod.io/)
-
 ## User Experience (UX)
 
 * User Stories
