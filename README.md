@@ -92,9 +92,9 @@ Manual Testing
 
 * Verified that the navigation menu shifts to and from the hamburger icon on the appropriate size screens. 
 
-* Verified that the log in button directs the user to the orders page within their profile to edit/add orders.
-
 * Verified if the register button is clicked, register page allows user to register username and password.
+
+* Verified that the log in button directs the user to the orders page within their profile to edit/add orders if their username and password are correct.
 
 * If 'All Orders' button is clicked, user is directed to the orders page.
 
