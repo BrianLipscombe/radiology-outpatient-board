@@ -88,17 +88,21 @@ It can also be found on gitpod [here](https://8080-brianlipscombe-radiology-2sjd
 
 Manual Testing
 
-* Click on all navigation links to verify that they direct to the indicated page.
+* Clicked on all navigation links to verify that they direct to the indicated page.
 
-* Verify that the navigation menu shifts to and from the hamburger icon on the appropriate size screens. 
+* Verified that the navigation menu shifts to and from the hamburger icon on the appropriate size screens. 
 
-* Verify that the log in button directs the user to the orders page within their profile to edit/add orders.
+* Verified that the log in button directs the user to the orders page within their profile to edit/add orders.
+
+* Verified if the register button is clicked, register page allows user to register username and password.
+
+* If 'All Orders' button is clicked, user is directed to the orders page.
 
 * Verify that the down arrows extend the collapsible and displays the details of each order when first clicked.
 
 * Verify that the down arrows retract the collapsible details when clicked a second time. 
 
-* Verify that the 'search' button retrieves order information that is relevant or matches the key terms the user is searching for.
+* Verify that the 'search' button retrieves order information that is relevant to, or matches the key terms the user searched for.
 
 * Verify 'New Order' button links to the add task page.
 
@@ -110,28 +114,13 @@ Manual Testing
 
 * Verify that navigation elements work the same as all other pages.
 
-* Buttons
-    - If register button is clicked, register page allows user to register username and password.
-    - If Log In button is clicked, log in page allows user to input username and password to access the order board.
-    - If All Orders button is clicked, user is brought back to the main page.
-    - If the searsch button is clicked after text in the search field is inputted that matches any text within any of the orders, then only the orders with the matching text are displayed.
+## Responsiveness
 
-* Collapsible
-    - If the double-down arrow buttons are clicked, the popup opens displaying the modality, exam description, patient's name, and the username of the tech who added the order.
-    - If the user is logged in and if the complete/delete button is clicked, the order is removed from the database.
-    - If the user is logged in and the edit button is clicked, the edit task page allows the user to edit the order.
+* This project is confirmed to be responsive on all standard screen sizes using the devtools device toolbar.
 
-* Responsiveness
+## Browser Validation
 
-    - This project is confirmed to be responsive on all standard screen sizes using the devtools device toolbar.
-
-* Browser Validation
-
-    - This project is confirmed to work with different browsers: Chrome and Internet Explorer.
-
-* Code Testing 
-
-    - This project has been tested using different browsers and different mobile devices such as iphone, Android, and laptops, as well as on a desktop computer.
+* This project is confirmed to work with different browsers: Chrome and Internet Explorer. This project has also been tested using different browsers and different mobile devices such as iphone, Android, and laptops, as well as on a desktop computer.
 
 * Lighthouse Auditing
 
