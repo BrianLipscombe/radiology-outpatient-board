@@ -84,8 +84,6 @@ The app can be found on Heroku [here.](https://radiology-board.herokuapp.com/)
 
 ## Testing
 
-Manual Testing
-
 * Clicked on all navigation links to verify that they direct to the indicated page.
 
 * Verified that the navigation menu shifts to and from the hamburger icon on the appropriate size screens. 
