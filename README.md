@@ -115,7 +115,6 @@ Manual Testing
     - If Log In button is clicked, log in page allows user to input username and password to access the order board.
     - If All Orders button is clicked, user is brought back to the main page.
     - If the searsch button is clicked after text in the search field is inputted that matches any text within any of the orders, then only the orders with the matching text are displayed.
-    - When the reset button is clicked, the text inputted in the search field is deleted and the search option is reset.
 
 * Collapsible
     - If the double-down arrow buttons are clicked, the popup opens displaying the modality, exam description, patient's name, and the username of the tech who added the order.
@@ -202,11 +201,11 @@ All files and pages were validated by direct input using:
 
 ## RESOLVED BUGS AND IMPROVEMENTS SINCE PREVIOUS SUBMISSION:
 
-* DEBUG mode is no longer turned on in production version of code. Within the app.py file debug=True was changed to debug=Flase. 
+* DEBUG mode is no longer turned on in production version of code. Within the app.py file debug=True was changed to debug=False. 
 
 * In order to improve UI/UX, I changed the landing page to the log in page instead of landing directly onto the orders page.
 
-* In order to improve UI/UX, after a user logs in they are directed to the orders page within their profile, which they can add/edit/delete orders from.
+* In order to improve UI/UX, after a user logs in they are directed to the orders page within their profile, where they can add/edit/delete orders.
 
 * In order to improve UI/UX, I removed the 'log in' button from the top navbar while the user is already on the log in page.
 
@@ -220,15 +219,29 @@ All files and pages were validated by direct input using:
 
 * In order to improve UI/UX, I moved the hamburger icon to the upper right corner.
 
-* In order to improve UI/UX, I moved moved the 'Haven't registered yet? Click here' text/button into the log in card panel for improved visibility.
+* In order to improve UI/UX, I moved moved the 'Haven't registered yet? Click here' text/button into the bottom of the log in panel for improved visibility.
 
-* In order to hopefully meet submission criterion, the tesing guidelines above within this README.md file have been revised and etxtended so that they are no longer considered missing or incomprehensible.
+* In order to hopefully meet submission criterion, the tesing guidelines above within this README.md file have been revised and extended so that they are no longer considered missing or incomprehensible.
 
 ## Future Improvements
 
+* Change JPG images to WebP format.
+
+* Add a confirmation message after users click delete before orders are actually deleted.
+
 * Add better CRUD functionality for users to edit their profiles.
-* Make entities more consistent. Instead of using tasks and orders for the same purpose, make all entities into orders, not tasks.
+
+* Make entities more consistent. Instead of using 'tasks' and 'orders' for the same purpose, make all entities into either 'tasks' or 'orders' not both.
+
 * Make the collapsible display orders in chronological order by the importance of the due dates, instead of by the order of when new orders were added.
+
+* Fix the appointment time icon to actually work when clicked and provide ease of adding appointment times instead of users having to manually type times into the field.
+
+## Future Improvements for future projects
+
+* Choose a better concept that more people can relate to that can be used on a global scale that maybe offers/sells common products and/or services.
+
+* Don't use Materialize.
 
 ## Credits
 
