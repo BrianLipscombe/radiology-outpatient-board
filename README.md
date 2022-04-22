@@ -98,21 +98,21 @@ Manual Testing
 
 * If 'All Orders' button is clicked, user is directed to the orders page.
 
-* Verify that the down arrows extend the collapsible and displays the details of each order when first clicked.
+* Verified that the down arrows extend the collapsible and displays the details of each order when first clicked.
 
-* Verify that the down arrows retract the collapsible details when clicked a second time. 
+* Verified that the down arrows retract the collapsible details when clicked a second time. 
 
-* Verify that the 'search' button retrieves order information that is relevant to, or matches the key terms the user searched for.
+* Verified that the 'search' button retrieves order information that is relevant to, or matches the key terms the user searched for.
 
-* Verify 'New Order' button links to the add task page.
+* Verified 'New Order' button links to the add task page.
 
-* Verify that the new order input fields allow the user to choose or input the necessary information. 
+* Verified that the new order input fields allow the user to choose or input the necessary information. 
 
-* Verify that the 'complete/delete' buttons delete the orders.
+* Verified that the 'complete/delete' buttons delete the orders.
 
-* Verfiy that the 'edit' buttons direct the user to the edit task page where orders can be edited.
+* Verfied that the 'edit' buttons direct the user to the edit task page where orders can be edited.
 
-* Verify that navigation elements work the same as all other pages.
+* Verified that navigation elements work the same as all other pages.
 
 ## Responsiveness
 
