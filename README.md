@@ -120,7 +120,7 @@ Manual Testing
 
 ## Browser Validation
 
-* This project is confirmed to work with different browsers: Chrome and Internet Explorer. This project has also been tested using different browsers and different mobile devices such as iphone, Android, and laptops, as well as on a desktop computer.
+* This project is confirmed to work with different browsers: Chrome and Internet Explorer. This project has also been tested using different mobile devices such as iphone, Android, and laptops, as well as on a desktop computer.
 
 * Lighthouse Auditing
 
