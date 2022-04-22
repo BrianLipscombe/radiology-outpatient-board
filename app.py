@@ -1,4 +1,4 @@
-# Code used as a template was borrowed from the Code Institute Data Centric Design Mini Project by Tim Nelson
+# Code used as template borrowed from the CI Mini Project by Tim Nelson
 
 import os
 from flask import (
@@ -18,6 +18,7 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
+
 
 @app.route("/")
 @app.route("/login", methods=["GET", "POST"])
@@ -56,7 +57,6 @@ def profile(username):
         return render_template("profile.html", username=username)
 
     return redirect(url_for("login"))
-
 
 
 @app.route("/get_tasks")
